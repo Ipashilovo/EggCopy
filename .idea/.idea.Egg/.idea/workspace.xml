@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0fd206c-d7e5-42ba-8a5d-30298f3ea3b0" name="Default Changelist" comment="" />
+    <list default="true" id="e0fd206c-d7e5-42ba-8a5d-30298f3ea3b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Glow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2020-09-02_16-42-57.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2020-09-02_16-42-57.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2021-01-17_19-19-43.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2021-01-17_19-19-43.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Слой 3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Слой 3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ручка.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ручка.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pancake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pancake.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Skillet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Skillet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpoonHandle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpoonHandle.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WaterDrop.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WaterDrop.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dcvgbhjk-01 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dcvgbhjk-01 1.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/piece.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/piece.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spoon.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spoon.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spoon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spoon/spoon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spoon/spoon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/untitled.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/untitled.blend.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +71,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DropSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skillet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" />
     </changedPaths>
   </component>
@@ -83,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610946506007</updated>
-      <workItem from="1610946512691" duration="11858000" />
+      <workItem from="1610946512691" duration="14235000" />
     </task>
     <servers />
   </component>
@@ -105,24 +144,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Piece.cs</url>
-          <line>3</line>
-          <properties documentPath="D:\UnityProject\Egg\Assets\Scripts\Piece.cs" initialLine="4">
-            <startOffsets>
-              <option value="85" />
-            </startOffsets>
-            <endOffsets>
-              <option value="96" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -48,6 +48,7 @@ public class Canvas : MonoBehaviour
         foreach (Skillet skillet in _skillets)
         {
             skillet.OnUsefullPieceTriggered += RemoveSkillet;
+            skillet.OnUslessPieceTriggered += OnLevelLoose;
         }
     }
 
@@ -74,7 +75,6 @@ public class Canvas : MonoBehaviour
     {
         if (_skillets.Count == 0)
         {
-            
             ShowWinUI();
         }
     }
@@ -82,7 +82,7 @@ public class Canvas : MonoBehaviour
     private void ShowWinUI()
     {
         _spawn.gameObject.SetActive(false);
-        PlayerPrefs.SetInt(StaticFields.SaveName, ++currentLvl);
+        PlayerPrefs.SetInt(StaticFields.SaveName, currentLvl);
         Destroy(_mover);
         foreach (var particle in _winParticles)
         {
@@ -96,7 +96,7 @@ public class Canvas : MonoBehaviour
         PlayerPrefs.DeleteKey(StaticFields.SaveName);
         _spawn.gameObject.SetActive(false);
         _endGame.gameObject.SetActive(true);
-        Destroy(_mover);
+        _looseParticles.gameObject.SetActive(true);
     }
 
     public void LoadNextLevel()
