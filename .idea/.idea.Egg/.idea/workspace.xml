@@ -5,43 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0fd206c-d7e5-42ba-8a5d-30298f3ea3b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Glow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Glow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/dcvgbhjk-01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2020-09-02_16-42-57.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2020-09-02_16-42-57.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2021-01-17_19-19-43.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/photo_2021-01-17_19-19-43.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Слой 3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Слой 3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/ручка.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/ручка.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pancake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pancake.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Particle.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skillet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skillet.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Skillet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Skillet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaterDrop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WaterDrop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/piece.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/spoon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/spoon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DropSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropSpawn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DropSpawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpoonHandle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpoonHandle.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterDrop.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterDrop.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dcvgbhjk-01 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dcvgbhjk-01 1.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/piece.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/piece.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spoon.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spoon.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spoon.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spoon/spoon.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spoon/spoon.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/untitled.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/untitled.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skillet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skillet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +43,30 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerHeatDrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SkilletDestroyParticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Settings.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/ColorArray.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StaticFields.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SelectRay.cs" />
+      <option value="$PROJECT_DIR$/Assets/ButtonTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DropSpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerHeatDrop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" />
+      <option value="$PROJECT_DIR$/Assets/HeatViewValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletDestroyParticle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DropSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skillet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Mover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" />
     </changedPaths>
   </component>
@@ -95,6 +90,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../EggCopy\Egg.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\UnityProject\EggCopy" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -122,7 +125,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610946506007</updated>
-      <workItem from="1610946512691" duration="14235000" />
+      <workItem from="1610946512691" duration="15644000" />
+      <workItem from="1611144782817" duration="3919000" />
+      <workItem from="1611214001499" duration="3608000" />
+      <workItem from="1611323056751" duration="1187000" />
+      <workItem from="1611408689281" duration="4111000" />
+      <workItem from="1611591296294" duration="601000" />
+      <workItem from="1611858059909" duration="3629000" />
+      <workItem from="1611993917793" duration="1363000" />
     </task>
     <servers />
   </component>
@@ -141,6 +151,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

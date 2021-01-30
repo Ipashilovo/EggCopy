@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.Events;
 public class Skillet : MonoBehaviour
 {
     [SerializeField] private Piece[] _pieces;
+    [SerializeField] private SkilletDestroyParticle _particle;
     private Color _color;
     private int[] _usefullPieces;
 
@@ -36,6 +38,12 @@ public class Skillet : MonoBehaviour
     public void SetUsefullPieces(int[] numbers)
     {
         _usefullPieces = numbers;
+    }
+
+
+    public void PlayParticle()
+    {
+        var newParticle = Instantiate(_particle, transform.position,  Quaternion.Euler(-90,0,0));
     }
 }
 

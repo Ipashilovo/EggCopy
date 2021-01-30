@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 44990517466796991}
+  _meshRenderer: {fileID: 5118348799229838385}
 --- !u!136 &2191602444474904973
 CapsuleCollider:
   m_ObjectHideFlags: 0

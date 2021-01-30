@@ -21,9 +21,9 @@ public class SkilletLineSetting
     public int UsefullNumbers { get; private set; }
     public int ColorNumber { get; private set; }
 
-    public SkilletLineSetting(int skilletRotation, int amount, int usefullNumbers, int colorNumber)
+    public SkilletLineSetting(int amount, int usefullNumbers, int colorNumber)
     {
-        SkilletsRotation = skilletRotation;
+        SkilletsRotation = 10;
         Amount = amount;
         UsefullNumbers = usefullNumbers;
         ColorNumber = colorNumber;

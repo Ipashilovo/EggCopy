@@ -42,7 +42,7 @@ public class SkilletSpawner : MonoBehaviour
 
             int[] usefullVariant = _usefullPiecesVariants.GetUsefullPiecesArray(lineSetting.UsefullNumbers);
             newSkillet.SetUsefullPieces(usefullVariant);
-
+            
             _skillets.Add(newSkillet);
         }
     }

@@ -40,7 +40,6 @@ public abstract class NewLevel
     protected LevelSetting _newLevel;
     protected int _lineAmount;
     protected int _speed;
-    protected int _skilletsRotation;
     protected int _skilletAmount;
     protected int _usefullNumbers;
     protected int _startColorNumber;
@@ -50,8 +49,8 @@ public abstract class NewLevel
     {
         for (int i = 0; i < _lineAmount; i++)
         {
-            CreateRandomValue(ref _skilletsRotation, ref _skilletAmount, ref _usefullNumbers);
-            _skilletLineSetting[i] = new SkilletLineSetting(_skilletsRotation, _skilletAmount, _usefullNumbers, _startColorNumber % 7);
+            CreateRandomValue(ref _skilletAmount, ref _usefullNumbers);
+            _skilletLineSetting[i] = new SkilletLineSetting(_skilletAmount, _usefullNumbers, _startColorNumber % 7);
             _startColorNumber++;
         }
 
@@ -59,9 +58,8 @@ public abstract class NewLevel
         return _newLevel;
     }
 
-    protected virtual void CreateRandomValue(ref int skilletsRotation, ref int skilletAmount, ref int usefullNumbers)
+    protected virtual void CreateRandomValue(ref int skilletAmount, ref int usefullNumbers)
     {
-        skilletsRotation = Random.Range(10, 20);
         skilletAmount = Random.Range(8, 20);
         usefullNumbers = Random.Range(0, 3);
     }
@@ -71,7 +69,7 @@ public class EasyLevel : NewLevel
 {
     public EasyLevel()
     {
-        _speed = Random.Range(20, 30);
+        _speed = Random.Range(60, 70);
         _startColorNumber = Random.Range(0, 6);
         _lineAmount = Random.Range(3, 4);
         _skilletLineSetting = new SkilletLineSetting[_lineAmount];
@@ -83,15 +81,14 @@ public class NormalLevel : NewLevel
 
     public NormalLevel()
     {
-        _speed = Random.Range(30, 50);
+        _speed = Random.Range(60, 60);
         _startColorNumber = Random.Range(0, 6);
         _lineAmount = Random.Range(4, 5);
         _skilletLineSetting = new SkilletLineSetting[_lineAmount];
     }
 
-    protected override void CreateRandomValue(ref int skilletsRotation, ref int skilletAmount, ref int usefullNumbers)
+    protected override void CreateRandomValue(ref int skilletAmount, ref int usefullNumbers)
     {
-        skilletsRotation = Random.Range(10, 20);
         skilletAmount = Random.Range(8, 20);
        usefullNumbers = Random.Range(1, 4);
     }
@@ -101,15 +98,14 @@ public class HardLevel : NewLevel
 {
     public HardLevel()
     {
-        _speed = Random.Range(40, 70);
+        _speed = Random.Range(60, 80);
         _startColorNumber = Random.Range(0, 6);
         _lineAmount = Random.Range(4, 6);
         _skilletLineSetting = new SkilletLineSetting[_lineAmount];
     }
 
-    protected override void CreateRandomValue(ref int skilletsRotation, ref int skilletAmount, ref int usefullNumbers)
+    protected override void CreateRandomValue(ref int skilletAmount, ref int usefullNumbers)
     {
-        skilletsRotation = Random.Range(10, 20);
         skilletAmount = Random.Range(8, 20);
         usefullNumbers = Random.Range(3, 6);
     }

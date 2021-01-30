@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] private LevelGenerator _levelGenerator;
     private LevelSetting _currentLevel;
-    private int _speed = 0;
+    private int _AngleSpeed = 0;
+    private float _speed;
     private Vector3 _newPosition;
 
     private List<Skillet> _skillets;
@@ -16,17 +18,19 @@ public class Mover : MonoBehaviour
         _newPosition = transform.position;
         _currentLevel = _levelGenerator.GetCurrentLevel();
 
-        _speed = _currentLevel.Speed;
+        _AngleSpeed = _currentLevel.Speed;
     }
 
     private void Update()
     {
-        transform.Rotate(0, _speed * Time.deltaTime, 0);
-        transform.position = Vector3.MoveTowards(transform.position, _newPosition, _speed * Time.deltaTime);
+        transform.Rotate(0, -_AngleSpeed * Time.deltaTime, 0);
+        transform.position = Vector3.Lerp(transform.position, _newPosition, Math.Abs(_speed));
+        _speed += Time.deltaTime / 3;
     }
 
     public void SetNewPosition(Skillet skillet)
     {
+        _speed = 0;
         skillet.OnUslessPieceTriggered += RemoveSpeed;
         skillet.OnUsefullPieceTriggered -= SetNewPosition;
         _skillets.Remove(skillet);
@@ -55,6 +59,6 @@ public class Mover : MonoBehaviour
 
     private void RemoveSpeed()
     {
-        _speed = 0;
+        _AngleSpeed = 0;
     }
 }

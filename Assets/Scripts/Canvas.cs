@@ -7,19 +7,20 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UI.Image;
 using Slider = UnityEngine.UI.Slider;
 
 
 public class Canvas : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
-    [SerializeField] private Button _spawn;
-    [SerializeField] private  Button _endGame;
-    [SerializeField] private Button _winLevel;
+    [SerializeField] private DropSpawner spawner;
     [SerializeField] private Text[] _levelsNumbers;
     [SerializeField] private Mover _mover;
     [SerializeField] private ParticleSystem[] _winParticles;
     [SerializeField] private ParticleSystem _looseParticles;
+    [SerializeField] private Image _winPanel;
+    [SerializeField] private Image _loosePanel;
     private int currentLvl;
     
 
@@ -81,21 +82,21 @@ public class Canvas : MonoBehaviour
 
     private void ShowWinUI()
     {
-        _spawn.gameObject.SetActive(false);
+        spawner.gameObject.SetActive(false);
         PlayerPrefs.SetInt(StaticFields.SaveName, currentLvl);
         Destroy(_mover);
         foreach (var particle in _winParticles)
         {
             particle.gameObject.SetActive(true);
         }
-        _winLevel.gameObject.SetActive(true);
+        _winPanel.gameObject.SetActive(true);
     }
 
     public void OnLevelLoose()
     {
         PlayerPrefs.DeleteKey(StaticFields.SaveName);
-        _spawn.gameObject.SetActive(false);
-        _endGame.gameObject.SetActive(true);
+        spawner.gameObject.SetActive(false);
+        _loosePanel.gameObject.SetActive(true);
         _looseParticles.gameObject.SetActive(true);
     }
 
