@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour 
 {
-    private LevelSetting _currentLevel; 
+    [SerializeField] private ColorArray _colorArray;
+    private LevelSetting _currentLevel;
     private NewLevel _newLevel;
     private int _levelValue = 1;
 
@@ -14,7 +15,7 @@ public class LevelGenerator : MonoBehaviour
             _levelValue = PlayerPrefs.GetInt(StaticFields.SaveName);
 
         GetDifficulty(_levelValue);
-
+        _newLevel.SetMaxColorNumber(_colorArray.GetColorArrayLength());
         _currentLevel = _newLevel.CreateNewLevel();
     }
 
@@ -43,6 +44,12 @@ public abstract class NewLevel
     protected int _skilletAmount;
     protected int _usefullNumbers;
     protected int _startColorNumber;
+    protected int _maxColorNumber;
+
+    public void SetMaxColorNumber(int number)
+    {
+        _maxColorNumber = number;
+    }
 
 
     public virtual LevelSetting CreateNewLevel()
@@ -50,7 +57,7 @@ public abstract class NewLevel
         for (int i = 0; i < _lineAmount; i++)
         {
             CreateRandomValue(ref _skilletAmount, ref _usefullNumbers);
-            _skilletLineSetting[i] = new SkilletLineSetting(_skilletAmount, _usefullNumbers, _startColorNumber % 7);
+            _skilletLineSetting[i] = new SkilletLineSetting(_skilletAmount, _usefullNumbers, _startColorNumber % _maxColorNumber);
             _startColorNumber++;
         }
 

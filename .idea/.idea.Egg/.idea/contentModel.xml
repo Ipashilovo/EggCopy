@@ -8,7 +8,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Canvas.cs" t="Include" />
-          <e p="ColorArray.cs" t="Include" />
+          <e p="Color" t="Include">
+            <e p="ColorArray.cs" t="Include" />
+            <e p="PalleteColor.cs" t="Include" />
+            <e p="SetColor.cs" t="Include" />
+          </e>
           <e p="DropSpawner.cs" t="Include" />
           <e p="DropSpownerButton.cs" t="Include" />
           <e p="HeatViewValue.cs" t="Include" />

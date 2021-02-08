@@ -10,4 +10,9 @@ public class ColorArray : MonoBehaviour
     {
         return _colors[number];
     }
+
+    public int GetColorArrayLength()
+    {
+        return _colors.Length;
+    }
 }

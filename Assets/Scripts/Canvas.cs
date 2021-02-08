@@ -14,7 +14,7 @@ using Slider = UnityEngine.UI.Slider;
 public class Canvas : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
-    [SerializeField] private DropSpawner spawner;
+    [SerializeField] private DropSpownerButton _spawner;
     [SerializeField] private Text[] _levelsNumbers;
     [SerializeField] private Mover _mover;
     [SerializeField] private ParticleSystem[] _winParticles;
@@ -79,10 +79,10 @@ public class Canvas : MonoBehaviour
             ShowWinUI();
         }
     }
-
+    
     private void ShowWinUI()
     {
-        spawner.gameObject.SetActive(false);
+        _spawner.gameObject.SetActive(false);
         PlayerPrefs.SetInt(StaticFields.SaveName, currentLvl);
         Destroy(_mover);
         foreach (var particle in _winParticles)
@@ -95,7 +95,8 @@ public class Canvas : MonoBehaviour
     public void OnLevelLoose()
     {
         PlayerPrefs.DeleteKey(StaticFields.SaveName);
-        spawner.gameObject.SetActive(false);
+        _mover.RemoveSpeed();
+        _spawner.gameObject.SetActive(false);
         _loosePanel.gameObject.SetActive(true);
         _looseParticles.gameObject.SetActive(true);
     }

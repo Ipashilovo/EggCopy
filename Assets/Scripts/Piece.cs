@@ -33,13 +33,16 @@ public class Piece : MonoBehaviour
             Destroy(waterDrop.gameObject);
             if (waterDrop.IsHeat || _isUseful)
             {
-                _skillet.PlayParticle();
+                //_skillet.PlayParticle();
                 _skillet.OnUsefullPieceTriggered?.Invoke(_skillet);
-                Destroy(_skillet.gameObject);
+                StartCoroutine(DesrtoySkillet());
             }
             else
+            {
                 _skillet.OnUslessPieceTriggered?.Invoke();
-            
+                Destroy(_skillet.gameObject);
+            }
+
         }
     }
 
@@ -57,6 +60,12 @@ public class Piece : MonoBehaviour
         {
             line.gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator DesrtoySkillet()
+    {
+        yield return new WaitForEndOfFrame();
+        Destroy(_skillet.gameObject);
     }
 }
 

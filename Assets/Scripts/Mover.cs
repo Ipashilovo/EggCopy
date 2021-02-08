@@ -31,7 +31,6 @@ public class Mover : MonoBehaviour
     public void SetNewPosition(Skillet skillet)
     {
         _speed = 0;
-        skillet.OnUslessPieceTriggered += RemoveSpeed;
         skillet.OnUsefullPieceTriggered -= SetNewPosition;
         _skillets.Remove(skillet);
         _newPosition += new Vector3(0, StaticFields.SkilletStep, 0);
@@ -44,7 +43,6 @@ public class Mover : MonoBehaviour
         foreach (Skillet skillet in _skillets)
         {
             skillet.OnUsefullPieceTriggered += SetNewPosition;
-            skillet.OnUslessPieceTriggered += RemoveSpeed;
         }
     }
     
@@ -53,11 +51,10 @@ public class Mover : MonoBehaviour
         foreach (Skillet skillet in _skillets)
         {
             skillet.OnUsefullPieceTriggered -= SetNewPosition;
-            skillet.OnUslessPieceTriggered -= RemoveSpeed;
         }
     }
 
-    private void RemoveSpeed()
+    public void RemoveSpeed()
     {
         _AngleSpeed = 0;
     }

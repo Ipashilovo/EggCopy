@@ -45,7 +45,7 @@ public class DropSpownerButton : MonoBehaviour
             _spownCooldown += Time.deltaTime;
     }
 
-    private void OnMouseExit()
+    private void OnMouseUp()
     {
         if (!_isHeat)
         {

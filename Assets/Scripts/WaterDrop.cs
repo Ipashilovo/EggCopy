@@ -12,7 +12,7 @@ public class WaterDrop : MonoBehaviour
 
     public void SetHeat()
     {
-        _meshRenderer.material.color = Color.red;
+        _meshRenderer.material.color = new Color(0.93f, 0.38f, 0.33f);
         _isHeat = true;
     }
 }
