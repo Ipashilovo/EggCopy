@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0fd206c-d7e5-42ba-8a5d-30298f3ea3b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/PalleteColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/PalleteColor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/SetColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/SetColor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +129,7 @@
       <workItem from="1611993917793" duration="1962000" />
       <workItem from="1612183983962" duration="8263000" />
       <workItem from="1612478120927" duration="164000" />
-      <workItem from="1612866203874" duration="5758000" />
+      <workItem from="1612866203874" duration="6491000" />
     </task>
     <servers />
   </component>
