@@ -16,13 +16,18 @@
           <e p="DropSpawner.cs" t="Include" />
           <e p="DropSpownerButton.cs" t="Include" />
           <e p="HeatViewValue.cs" t="Include" />
+          <e p="Interface" t="Include">
+            <e p="ISpawnLookerReaction.cs" t="Include" />
+          </e>
           <e p="LevelGenerator.cs" t="Include" />
+          <e p="LevelLoader.cs" t="Include" />
           <e p="LevelSetting.cs" t="Include" />
           <e p="Mover.cs" t="Include" />
           <e p="Piece.cs" t="Include" />
           <e p="SelectRay.cs" t="Include" />
           <e p="Skillet.cs" t="Include" />
           <e p="SkilletDestroyParticle.cs" t="Include" />
+          <e p="SkilletLooker.cs" t="Include" />
           <e p="SkilletSpawner.cs" t="Include" />
           <e p="SpawnerHeatDrop.cs" t="Include" />
           <e p="StaticFields.cs" t="Include" />

@@ -16,14 +16,13 @@ public class LevelSetting
 
 public class SkilletLineSetting
 {
-    public int SkilletsRotation { get; private set; }
+    public int SkilletsRotation { get; private set; } = 10;
     public int Amount { get; private set; }
     public int UsefullNumbers { get; private set; }
     public int ColorNumber { get; private set; }
 
     public SkilletLineSetting(int amount, int usefullNumbers, int colorNumber)
     {
-        SkilletsRotation = 10;
         Amount = amount;
         UsefullNumbers = usefullNumbers;
         ColorNumber = colorNumber;

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class SkilletSpawner : MonoBehaviour
 {
-    [SerializeField] private Canvas _canvas;
-    [SerializeField] private Mover _mover;
+    [SerializeField] private SkilletLooker _skilletLooker;
     [SerializeField] LevelGenerator _levelGenerator;
     [SerializeField] UsefullPiecesVariants _usefullPiecesVariants;
-    [SerializeField] private ColorArray _colorArray;
+    [SerializeField] private PalleteColor _colorPalette;
     [SerializeField] private Skillet _skillet;
     private List<Skillet> _skillets = new List<Skillet>();
     private LevelSetting _currentLevel;
@@ -24,8 +23,7 @@ public class SkilletSpawner : MonoBehaviour
             shift -= new Vector3(0, _currentLevel.SkilletLines[i].Amount, 0) * StaticFields.SkilletStep;
             rotate += _currentLevel.SkilletLines[i].SkilletsRotation * _currentLevel.SkilletLines[i].Amount;
         }
-        _canvas.SetSkilletList(_skillets);
-        _mover.SetSkillets(_skillets);
+        _skilletLooker.SetSkilletList(_skillets);
     }
 
     private void CreateSkilletLine(SkilletLineSetting lineSetting, Vector3 startPosition, int startRotation)
@@ -37,7 +35,7 @@ public class SkilletSpawner : MonoBehaviour
             newSkillet.transform.Rotate(0, startRotation + lineSetting.SkilletsRotation * i, 0);
             newSkillet.transform.SetParent(this.transform);
 
-            Color color = _colorArray.GetColor(colorNumber);
+            Color color = _colorPalette.GetColor(colorNumber);
             newSkillet.SetColor(color);
 
             int[] usefullVariant = _usefullPiecesVariants.GetUsefullPiecesArray(lineSetting.UsefullNumbers);

@@ -1,13 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LevelGenerator : MonoBehaviour 
 {
-    [SerializeField] private ColorArray _colorArray;
+    [SerializeField] private PalleteColor _colorPallete;
+    [SerializeField] private int _levelDifficultyStep = 25;
     private LevelSetting _currentLevel;
     private NewLevel _newLevel;
     private int _levelValue = 1;
+    
+    private Type[] _levels =
+    {
+        typeof(EasyLevel),
+        typeof(NormalLevel),
+        typeof(HardLevel)
+    };
 
     private void OnEnable()
     {
@@ -15,7 +25,7 @@ public class LevelGenerator : MonoBehaviour
             _levelValue = PlayerPrefs.GetInt(StaticFields.SaveName);
 
         GetDifficulty(_levelValue);
-        _newLevel.SetMaxColorNumber(_colorArray.GetColorArrayLength());
+        _newLevel.SetMaxColorNumber(_colorPallete.GetColorArrayLength());
         _currentLevel = _newLevel.CreateNewLevel();
     }
 
@@ -26,12 +36,11 @@ public class LevelGenerator : MonoBehaviour
     
     private void GetDifficulty(int lvl)
     {
-        if (lvl < 25)
-            _newLevel = new EasyLevel();
-        else if (lvl < 50)
-            _newLevel = new NormalLevel();
-        else
-            _newLevel = new HardLevel();
+        int number = lvl / _levelDifficultyStep;
+        if (number > _levels.Length)
+            number = _levels.Length - 1;
+        
+        _newLevel = (NewLevel)Activator.CreateInstance(_levels[number]);
     }
 }
 

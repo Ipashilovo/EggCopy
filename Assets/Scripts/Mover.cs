@@ -3,21 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour
+public class Mover : MonoBehaviour, ISpawnLookerReaction
 {
+    [SerializeField] private SkilletLooker _skilletLooker;
     [SerializeField] private LevelGenerator _levelGenerator;
     private LevelSetting _currentLevel;
     private int _AngleSpeed = 0;
     private float _speed;
     private Vector3 _newPosition;
 
-    private List<Skillet> _skillets;
-
     private void Start()
     {
+        _skilletLooker.SetNewLookerReaction(this);
         _newPosition = transform.position;
         _currentLevel = _levelGenerator.GetCurrentLevel();
-
         _AngleSpeed = _currentLevel.Speed;
     }
 
@@ -28,33 +27,30 @@ public class Mover : MonoBehaviour
         _speed += Time.deltaTime / 3;
     }
 
-    public void SetNewPosition(Skillet skillet)
+    public void InitValue(int value){}
+
+    public void OnLevelLoose()
+    {
+        RemoveSpeed();
+    }
+    
+    public void OnChangeValue()
+    {
+        SetNewPosition();
+    }
+    
+    public void OnLevelWin()
+    {
+        Destroy(this.gameObject);
+    }
+
+    private void SetNewPosition()
     {
         _speed = 0;
-        skillet.OnUsefullPieceTriggered -= SetNewPosition;
-        _skillets.Remove(skillet);
         _newPosition += new Vector3(0, StaticFields.SkilletStep, 0);
     }
 
-    public void SetSkillets(List<Skillet> skillets)
-    {
-        _skillets = skillets;
-
-        foreach (Skillet skillet in _skillets)
-        {
-            skillet.OnUsefullPieceTriggered += SetNewPosition;
-        }
-    }
-    
-    private void OnDisable()
-    {
-        foreach (Skillet skillet in _skillets)
-        {
-            skillet.OnUsefullPieceTriggered -= SetNewPosition;
-        }
-    }
-
-    public void RemoveSpeed()
+    private void RemoveSpeed()
     {
         _AngleSpeed = 0;
     }

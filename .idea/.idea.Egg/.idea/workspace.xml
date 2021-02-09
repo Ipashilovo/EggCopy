@@ -7,17 +7,14 @@
     <list default="true" id="e0fd206c-d7e5-42ba-8a5d-30298f3ea3b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Egg/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Drop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Drop.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/spoon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/spoon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ColorArray.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ColorArray.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/PalleteColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/PalleteColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Color/SetColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Color/SetColor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +34,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerHeatDrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interface/ISpawnLookerReaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SkilletDestroyParticle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TMP_Settings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SkilletLooker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -49,7 +49,6 @@
       <option value="$PROJECT_DIR$/Assets/ButtonTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DropSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerHeatDrop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" />
       <option value="$PROJECT_DIR$/Assets/HeatViewValue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SkilletDestroyParticle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DropSpawner.cs" />
@@ -59,13 +58,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PalleteColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SetColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DropSpownerButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Mover.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelSetting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Color/ColorArray.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Color/PalleteColor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Color/SetColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Interface/ISpawnLookerReaction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Canvas.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Mover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SkilletLooker.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nEDl2Mq4dNxYMe0dtTRhI5BZmQ" />
@@ -133,6 +138,7 @@
       <workItem from="1611993917793" duration="1962000" />
       <workItem from="1612183983962" duration="8263000" />
       <workItem from="1612478120927" duration="164000" />
+      <workItem from="1612866203874" duration="5758000" />
     </task>
     <servers />
   </component>

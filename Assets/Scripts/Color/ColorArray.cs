@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class ColorArray : MonoBehaviour
 {
-    [SerializeField] private Color[] _colors;
+   
     
-    public Color GetColor(int number)
-    {
-        return _colors[number];
-    }
-
-    public int GetColorArrayLength()
-    {
-        return _colors.Length;
-    }
+    
 }

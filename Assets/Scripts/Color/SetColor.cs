@@ -11,7 +11,6 @@ public class SetColor : MonoBehaviour
 
     private void Start()
     {
-        _renderer.material.color = _pallete.GetCoolor(_number);
-        
+        _renderer.material.color = _pallete.GetColor(_number);
     }
 }
